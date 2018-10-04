@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Repohead</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <style>
+        .nav-tabs .nav-link:focus {
+            outline: 0;
+            border: none;
+        }
+
+        ol a {
+            font-size: 18px;
+        }
+
+        span.divider {
+            padding: 0rem .25rem 0rem 0rem;
+        }
+
+        .nav-tabs .nav-link.active {
+            border-top: 3px solid #e36209;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        .repohead {
+            background-color: #fafbfc;
+            /*padding: 0.5rem 5rem 0rem 5rem;*/
+            border-bottom-color: #dee2e6;
+        }
+
+        .input-group button.btn {
+            background-image: linear-gradient(-180deg, #faf8f8 0%, #e6ebf1 90%);
+            border-color: #c4c9cc;
+            font-size: 13px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .input-group .input-group-text {
+            font-size: 13px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .badge {
+            background-color: #ededed;
+            color: #444d5f;
+        }
+
+        .octicon-eye,
+        .octicon-star,
+        .octicon-repo-forked {
+            fill: #24292e;
+            margin-right: 3px;
+        }
+
+        .input-group {
+            height: 1.5rem;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="css/main.css" type="text/css" /> -->
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="">
+        <div class="repohead">
+            <div class="prof-title-spec">
+                <nav class="navbar title-prof mr-5 ml-5">
+                    <ol class="breadcrumb mr-auto mb-0 bg-transparent">
+                        <li class="breadcrumb-item">
+                            <a href="#">twbs</a>
+                            <span class="divider">/</span>
+                        </li>
+                        <li class="text-bold" aria-current="page">
+                            <a href="#" class="font-weight-bold repo_title">bootstrap</a>
+                        </li>
+                    </ol>
+                    <div class="spec d-flex">
+                        <div class="input-group m-auto flex-nowrap p-auto">
+                            <div class="input-group-prepend">
+                                <button class="btn bg-transparent btn-light dropdown-toggle font-weight-bold align-self-center py-1" type="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path>
+                                    </svg>Watch</button>
+                            </div>
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-white border-left-0 font-weight-bold text-body align-self-center py-1">7,397</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group mx-2 flex-nowrap">
+                            <div class="input-group-prepend ">
+                                <button class="btn bg-transparent btn-light font-weight-bold align-self-center py-1" type="button">
+                                    <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
+                                    </svg>Star</button>
+                            </div>
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-white border-left-0 font-weight-bold text-body align-self-center py-1">127,250</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group m-auto flex-nowrap">
+                            <div class="input-group-prepend ">
+                                <button class="btn bg-transparent btn-light font-weight-bold align-self-center py-1" type="button">
+                                    <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path>
+                                    </svg>Fork</button>
+                            </div>
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-white border-left-0 font-weight-bold text-body align-self-center py-1">61,991</span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="tabs">
+                <ul class="nav nav-tabs mr-5 ml-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-secondary">Issues
+                            <span class="badge badge-pill">381</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a href="#" class="nav-link text-secondary">Pull requests
+                            <span class="badge badge-pill">117</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-body active">Projects
+                            <span class="badge badge-pill">4</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-secondary">Insights</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
